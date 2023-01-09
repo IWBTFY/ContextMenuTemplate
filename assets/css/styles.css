@@ -1,0 +1,78 @@
+:root {
+  --body-backgroundImg: url("../img/space.jpg") no-repeat;
+  --Context-MenuColor: #fff;
+  --ContextMenu-text-onHover: #ce05e4;
+
+  --contextmenu-delete-text-onhover: rgb(220, 58, 58);
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+/* Global Styles */
+body,
+html {
+  height: 100vh;
+  font-family: "Poppins" !important;
+}
+
+body {
+  background: var(--body-backgroundImg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+body,
+html,
+p,
+img,
+span,
+div,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+/* __________________________ */
+/* Bootstrao Override */
+.my-1 {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+/* Context Menu */
+.ContextMenuContainer {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  min-width: fit-content;
+  width: 12rem;
+  height: 14rem;
+  background-color: var(--Context-MenuColor);
+}
+
+.ContextMenuContainer:hover {
+  cursor: pointer;
+}
+
+.menuItmes {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.menuItmes:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--ContextMenu-text-onHover);
+}
+
+.menuItmes.delete:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--contextmenu-delete-text-onhover);
+}

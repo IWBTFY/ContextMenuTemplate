@@ -4,7 +4,7 @@
 
 ### I made the code clean as possible so you can easily use and change anything you want. Read bottom description
 
-### Check it live [here]().
+### Check it live [here](https://iwbtfy.github.io/ContextMenuTemplate/).
 
 ---
 
@@ -36,8 +36,6 @@
 
 ---
 
----
+# Template Images:
 
-# Design Images for the web:
-
-![First]()
+![First](assets/img/ScreenShot.png)
